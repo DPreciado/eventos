@@ -15,6 +15,8 @@
 		3D49762B2559DAA100BED9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4976292559DAA100BED9BA /* LaunchScreen.storyboard */; };
 		3D4976362559DAA200BED9BA /* eventosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976352559DAA200BED9BA /* eventosTests.swift */; };
 		3D4976412559DAA200BED9BA /* eventosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976402559DAA200BED9BA /* eventosUITests.swift */; };
+		3D4976532559DC4900BED9BA /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976522559DC4900BED9BA /* Evento.swift */; };
+		3D4976552559E79600BED9BA /* CeldaEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976542559E79600BED9BA /* CeldaEventoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3D49763C2559DAA200BED9BA /* eventosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4976402559DAA200BED9BA /* eventosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventosUITests.swift; sourceTree = "<group>"; };
 		3D4976422559DAA200BED9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4976522559DC4900BED9BA /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		3D4976542559E79600BED9BA /* CeldaEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEventoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,11 @@
 		3D49761D2559DA9300BED9BA /* eventos */ = {
 			isa = PBXGroup;
 			children = (
-				3D49761E2559DA9300BED9BA /* AppDelegate.swift */,
-				3D4976202559DA9300BED9BA /* SceneDelegate.swift */,
-				3D4976222559DA9300BED9BA /* ViewController.swift */,
-				3D4976242559DA9300BED9BA /* Main.storyboard */,
+				3D4976512559DB5400BED9BA /* App */,
+				3D4976502559DB4200BED9BA /* ViewControllers */,
+				3D49764F2559DB3400BED9BA /* Storyboards */,
+				3D49764E2559DB1B00BED9BA /* Models */,
 				3D4976272559DAA100BED9BA /* Assets.xcassets */,
-				3D4976292559DAA100BED9BA /* LaunchScreen.storyboard */,
 				3D49762C2559DAA100BED9BA /* Info.plist */,
 			);
 			path = eventos;
@@ -126,6 +129,41 @@
 				3D4976422559DAA200BED9BA /* Info.plist */,
 			);
 			path = eventosUITests;
+			sourceTree = "<group>";
+		};
+		3D49764E2559DB1B00BED9BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D4976522559DC4900BED9BA /* Evento.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3D49764F2559DB3400BED9BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D4976242559DA9300BED9BA /* Main.storyboard */,
+				3D4976292559DAA100BED9BA /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D4976502559DB4200BED9BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D4976222559DA9300BED9BA /* ViewController.swift */,
+				3D4976542559E79600BED9BA /* CeldaEventoController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D4976512559DB5400BED9BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D49761E2559DA9300BED9BA /* AppDelegate.swift */,
+				3D4976202559DA9300BED9BA /* SceneDelegate.swift */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4976532559DC4900BED9BA /* Evento.swift in Sources */,
 				3D4976232559DA9300BED9BA /* ViewController.swift in Sources */,
 				3D49761F2559DA9300BED9BA /* AppDelegate.swift in Sources */,
+				3D4976552559E79600BED9BA /* CeldaEventoController.swift in Sources */,
 				3D4976212559DA9300BED9BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
